@@ -37,6 +37,7 @@ public class Test {
         {
             IniParser parser = new IniParser("C:\\Users\\CrazyOnionMan\\IdeaProjects\\untitled\\src\\config.ini");
             parser.read();
+            parser.print();
         }
         catch (Exception e){
             System.out.println(e.getMessage());
