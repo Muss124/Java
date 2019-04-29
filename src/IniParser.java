@@ -95,7 +95,7 @@ public class IniParser {
         }
     }
 
-    public void print(){
+    public void print() {
         System.out.println(data.toString());
     }
 
@@ -109,6 +109,7 @@ public class IniParser {
                     currentSection = line;
                 } else {
                     data.put(currentSection, sectionData);
+                    currentSection = line;
                     sectionData = new HashMap<String, String>();
                 }
                 return true;
@@ -122,7 +123,7 @@ public class IniParser {
             String[] pairs = line.split("=");
             pairs[0] = pairs[0].trim();
             pairs[1] = pairs[1].trim();
-            if (pairs[0].matches("^[a-zA-Z0-9]+") && pairs[1].matches("^[a-zA-Z0-9.]+")) {
+            if (pairs[0].matches("^[a-zA-Z0-9]+") && pairs[1].matches("^[a-zA-Z0-9./]+")) {
                 sectionData.put(pairs[0], pairs[1]);
                 return true;
             }
