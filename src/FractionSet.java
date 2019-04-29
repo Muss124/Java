@@ -1,14 +1,14 @@
 import java.util.*;
 
 public class FractionSet {
-    private List<RationalFraction> fractions;
+    private List<RationalFraction> fractions = new ArrayList<RationalFraction>();
     private Map<RationalFraction, Integer> cachedGreater;
     private Map<RationalFraction, Integer> cachedLesser;
     private RationalFraction cachedMaximal;
     private RationalFraction cachedMininal;
 
     FractionSet(RationalFraction...rationalFractions){
-        fractions = Arrays.asList(rationalFractions);
+        fractions.addAll(Arrays.asList(rationalFractions));
         cachedGreater = new HashMap<RationalFraction, Integer>();
         cachedLesser = new HashMap<RationalFraction, Integer>();
         cachedMaximal = null;
