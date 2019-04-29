@@ -27,13 +27,9 @@ public class IniParser {
             String tmp = line;
             tmp = tmp.trim();
             if (pos != -1 ){ tmp = line.substring(0, pos);}
-//            System.out.println("\"" + tmp + "\"");
+
             if (pos != 0) { newContent.add(tmp);}
-//            if (pos != -1){
-//                line.getChars(0, pos+1, dst, 0);
-//                content.add(i, dst.toString());
-//            }
-//            System.out.println(content.get(i));
+
         }
         content = newContent;
 
