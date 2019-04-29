@@ -4,6 +4,11 @@ import java.util.*;
 public class IniParser {
     private String path;
     private List<String> content = new ArrayList<String>();
+    private String currentSection = null;
+    private Map<String, String> sectionData = new HashMap<String, String>();
+    private Map<String, Map<String, String>> data = new HashMap<String, Map<String, String>>();
+
+
     IniParser(String filePath){
         path = filePath;
     }
@@ -11,6 +16,7 @@ public class IniParser {
         FileReader file = new FileReader(path);
         Scanner scanner = new Scanner(file);
         List<String> newContent = new ArrayList<String>();
+
 
         while (scanner.hasNextLine()) {
             content.add(scanner.nextLine());
@@ -31,44 +37,53 @@ public class IniParser {
         }
         content = newContent;
 
-        String currentSection = null;
-        Map<String, String> sectionData = new HashMap<String, String>();
-        Map<String, Map<String, String>> data = new HashMap<String, Map<String, String>>();
+
+
         for(String line: content){
 
-            // переделать на регулярки для проверки секций
-            int posOpen = line.indexOf('[');
-            int posClose = line.indexOf(']');
+            boolean isSection = getSection(line);
             if (currentSection == null){
-                if (posOpen != -1){
-                    if (posClose != 0 && posClose > posOpen){
-                        currentSection = line.substring(posOpen + 1, posClose);
-                        System.out.println(currentSection);
-                    } else {
-                        // исключение ошибка синтаксиса секции
-                    }
-                } else {
-                    // исключение отсутствие секции
+                if (!isSection) {
+                    // нету секции
                 }
-            } else {
-                if (posOpen != -1){
-                    if (posClose != 0 && posClose > posOpen){
-                        // тут получить дату и записать секцию
-                        currentSection = line.substring(posOpen + 1, posClose);
-                        // System.out.println(currentSection);
-                    } else {
-                        // исключение
-                    }
-                } else {
-                    int equal = line.indexOf(" = ");
-                    String name = line.substring(0, equal);
-                    System.out.println(name);
-                    //sectionData.put();
+                if (!getParam(line)) {
+                    //нету параметров
                 }
             }
         }
-
+        if (!sectionData.isEmpty()){
+            data.put(currentSection, sectionData);
+        }
         file.close();
+    }
+    private boolean getSection(String line){
+        int posOpen = line.indexOf('[');
+        int posClose = line.indexOf(']');
+        if (posOpen != -1 && posClose != -1 && posClose > posOpen){
+            line = line.substring(posOpen + 1, posClose);
+            if (line.matches("[\\w+]")){
+                if (currentSection == null ){
+                    currentSection = line;
+                } else {
+                    data.put(currentSection, sectionData);
+                    sectionData =  new HashMap<String, String>();
+                }
+                return true;
+            }
+        }
+        return false;
+    }
+    private boolean getParam(String line){
+        if (line.indexOf('=') != -1){
+            String[] pairs = line.split("=");
+            pairs[0] = pairs[0].trim();
+            pairs[1] = pairs[1].trim();
+            if (pairs[0].matches("^[a-zA-Z0-9]+") && pairs[1].matches("^[a-zA-Z0-9.]+")){
+                sectionData.put(pairs[0],pairs[1]);
+                return true;
+            }
+        }
+        return false;
     }
     //public void
 }
