@@ -163,7 +163,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558641166990" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558641735353" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -238,7 +238,7 @@
       <workItem from="1556526817914" duration="5182000" />
       <workItem from="1556534532718" duration="6589000" />
       <workItem from="1556718830274" duration="4354000" />
-      <workItem from="1558607865264" duration="23940000" />
+      <workItem from="1558607865264" duration="24328000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 1 fixed + Lab 2 added">
       <created>1556498474312</created>
@@ -279,7 +279,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75746000" />
+    <option name="totallyTimeSpent" value="76134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
