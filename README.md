@@ -1,5 +1,5 @@
 # Java labs
-include solutions for:
+Include solutions for:
 1. [lab 1](https://yadi.sk/i/tO_jo2IxPcoSmQ)  
 2. [lab 3](https://yadi.sk/i/ZHJYisDDnPnCTg)
 
