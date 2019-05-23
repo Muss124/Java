@@ -1,6 +1,17 @@
 package Fractions;
+
 import java.util.stream.*;
 
+/*
+для дробей:
+изменить название сета с поли на коэффициенты ✓
+заменить функцию isGreater на перегрузку оператора ✓
+так же перегрузить оператор для сложения или сделать не статический метод sum ✓
+(?) возможно, имелось в виду написать просто метод equals возвращающий -1\0\1 ✓
+сделать нормальное кеширование, т.е. пользователь не видет, что оно там вообще есть (добавить в метод проверку
+убрать сетер\гетер для коэфов, добавить получение по индексу ✓
+сделать поиск количества больше\меньше через stream api
+ */
 public class FractionTest {
     public static void main(String[] args) throws Throwable {
         RationalFraction fraction1 = new RationalFraction(15, 16);
@@ -27,14 +38,5 @@ public class FractionTest {
                 .count();
         RationalFraction res = Stream.of(fraction1, fraction2, fraction3, fraction4, fraction5, fraction6).max(RationalFraction::compareTo).get();
         res.print();
-        //Stream<RationalFraction> myStream = Stream.of
-        //long test = stream().filter(w -> w.compareTo(fraction1) == 1).count();
-//        System.out.println();
-//        System.out.println();
-//        List<RationalFraction> fractions = Arrays.asList(fraction1, fraction2, fraction3, fraction4, fraction5, fraction6);
-//        fractions.add(5, fraction6);
-//        for(RationalFraction fraction : fractions){
-//            fraction.print();
-//        }
     }
 }

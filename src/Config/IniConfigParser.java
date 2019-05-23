@@ -3,21 +3,18 @@ import java.io.FileReader;
 import java.util.*;
 
 public class IniConfigParser {
-    private List<String> content = new ArrayList<String>();
     private String currentSection = null;
     private Map<String, String> sectionData = new HashMap<String, String>();
-    //public static Map<String, Map<String, String>> Parse(String filePath) throws Exception {
+    private Map<String, Map<String, String>> parsedData = new HashMap<String, Map<String, String>>();
+    public ConfigData Parse(String filePath) throws Exception {
 
-}
 
-        /*
-        Map<String, Map<String, String>> parsedData = new HashMap<String, Map<String, String>>();
 
 
         FileReader file = new FileReader(filePath);
         Scanner scanner = new Scanner(file);
-        List<String> newContent = new ArrayList<String>();
-
+        List<String> clearContent = new ArrayList<String>();
+        List<String> content = new ArrayList<String>();
 
         while (scanner.hasNextLine()) {
             content.add(scanner.nextLine());
@@ -30,13 +27,12 @@ public class IniConfigParser {
             if (pos != -1) {
                 tmp = line.substring(0, pos);
             }
-
             if (pos != 0) {
-                newContent.add(tmp);
+                clearContent.add(tmp);
             }
 
         }
-        content = newContent;
+        content = clearContent;
 
         for (String line : content) {
 
@@ -58,9 +54,9 @@ public class IniConfigParser {
 
         file.close();
 
-        return parsedData;
+        return new ConfigData(parsedData);
     }
-    private static boolean getSection(String line) {
+    private boolean getSection(String line) {
         int posOpen = line.indexOf('[');
         int posClose = line.indexOf(']');
         if (posOpen != -1 && posClose != -1 && posClose > posOpen) {
@@ -69,7 +65,7 @@ public class IniConfigParser {
                 if (currentSection == null) {
                     currentSection = line;
                 } else {
-                    data.put(currentSection, sectionData);
+                    parsedData.put(currentSection, sectionData);
                     currentSection = line;
                     sectionData = new HashMap<String, String>();
                 }
@@ -78,7 +74,7 @@ public class IniConfigParser {
         }
         return false;
     }
-    private static boolean getParam(String line) {
+    private boolean getParam(String line) {
         if (line.indexOf('=') != -1) {
             String[] pairs = line.split("=");
             pairs[0] = pairs[0].trim();
@@ -91,4 +87,3 @@ public class IniConfigParser {
         return false;
     }
 }
-*/
