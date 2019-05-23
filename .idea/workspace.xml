@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ced1593-39b8-44e0-b46e-70a28916871f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Config/ConfigData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/ConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/ConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/IniConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/IniConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/IniConfigParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/IniConfigParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fractions/FractionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fractions/FractionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Config/ConfigTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="73" lean-forward="true" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Fractions/FractionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -108,11 +113,11 @@
         <option value="$PROJECT_DIR$/src/Fractions/RationalFraction.java" />
         <option value="$PROJECT_DIR$/src/Fractions/Polynomial.java" />
         <option value="$PROJECT_DIR$/src/Fractions/FractionSet.java" />
-        <option value="$PROJECT_DIR$/src/Fractions/FractionTest.java" />
         <option value="$PROJECT_DIR$/src/Config/IniConfigParser.java" />
         <option value="$PROJECT_DIR$/src/Config/IniConfig.java" />
         <option value="$PROJECT_DIR$/src/Config/ConfigData.java" />
         <option value="$PROJECT_DIR$/src/Config/ConfigTest.java" />
+        <option value="$PROJECT_DIR$/src/Fractions/FractionTest.java" />
       </list>
     </option>
   </component>
@@ -153,6 +158,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Config" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Fractions" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -163,7 +174,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558641735353" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558641891165" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -238,7 +249,7 @@
       <workItem from="1556526817914" duration="5182000" />
       <workItem from="1556534532718" duration="6589000" />
       <workItem from="1556718830274" duration="4354000" />
-      <workItem from="1558607865264" duration="24328000" />
+      <workItem from="1558607865264" duration="24488000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 1 fixed + Lab 2 added">
       <created>1556498474312</created>
@@ -279,13 +290,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76134000" />
+    <option name="totallyTimeSpent" value="76294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -295,7 +306,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.32872504" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.32872504" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.29800308" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.29800308" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39938557" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -509,27 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fractions/FractionSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-          <folding>
-            <element signature="e#128#146#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1405#1406#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fractions/FractionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Config/LineParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -600,10 +590,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fractions/FractionSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+          <folding>
+            <element signature="e#128#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Config/ConfigTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="73" lean-forward="true" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fractions/FractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
