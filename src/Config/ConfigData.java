@@ -3,7 +3,7 @@ package Config;
 import java.util.Map;
 
 public class ConfigData {
-    private Map<String, Map<String, String>> data;
+    private final Map<String, Map<String, String>> data;
 
     ConfigData(Map<String, Map<String, String>> data){
         this.data = data;
