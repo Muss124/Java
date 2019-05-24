@@ -13,7 +13,7 @@ To do:
   * [x] add getting by index
   * [x] change min\max and greater\lesser to stream api
 * [ ] fix lab 3
-  * [ ] change name of class
-  * [ ] remove thrash fields. Only important data
-  * [ ] constructor that calls for parse method 
+  * [x] change name of class
+  * [ ] (?) remove thrash fields. Only important data
+  * [x] constructor that calls for parse method 
   * [ ] (?) add new parser class that will have one static method - parse
